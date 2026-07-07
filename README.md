@@ -32,3 +32,7 @@ Subject-disjoint split (no identity leakage), image-extension filter, path track
 | UTKFace leak	| 4.9%	| 4.6%	| 4.2% ↓| 
 | ≤1% leak target| 	Age 26, 32% friction | 	Age 26, 32% friction | 	Age 25, 22% friction| 
 | Binary acc @ 16	|  97.2%	| 97.9%	| 97.9%| 
+
+v3 is the best model so far. The leak-aware loss cut under-16 leak by 25% (6.8 → 5.1) while EfficientNetV2-S pulled MAE down 0.15 years, all without degrading accuracy.
+
+The per-dataset gap narrowed too: FG-NET leak went from 13.5% → 8.1%, and the ≤1% target is now achievable at challenge age 25 (one year closer, 10% less adult friction). The 1% floor is still ~0.8% at challenge age 26.
